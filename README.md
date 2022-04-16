@@ -62,3 +62,12 @@ i_tipo_cliente
 from cliente2
 
 ![alt](ss.png)
+
+
+
+#update 
+é usado para modifcar registros de uma coluna
+
+update cliente set s_nome_cliente="lauricio" where i_cliente_cliente=1;
+
+![cliente](ssa.png)
