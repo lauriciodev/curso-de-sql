@@ -44,3 +44,21 @@ para especificar a coluna basta apenas substituir o * pelo numero da coluna
 
 
 ![alt](dtl.png)
+
+
+
+#fazendo inserção multipla
+
+para fazer uma inserção multipla voce precisa usar inser em conjunto com o select 
+
+insert into cliente2 (i_cliente_cliente,s_nome_cliente,s_cpf_cliente,d_nasc_cliente,i_tipo_cliente)
+select 
+i_cliente_cliente,
+s_nome_cliente,
+s_cpf_cliente,
+d_nasc_cliente,
+i_tipo_cliente
+
+from cliente2
+
+![alt](ss.png)
