@@ -2,6 +2,43 @@
 curso de sql com  professor bruno cfb curso
 
 
+##chave estrangeira
+
+alter table clientes add constraint fk_tipo_cliente foreign key
+(i_tipo_cliente)references tipocliente (i_tipo_tipocliente);
+
+
+Como funciona foreign key mysql?
+A chave estrangeira, ou foreign key, é um conceito ligeiramente diferente.
+...
+Diferentemente da chave primária, a chave estrangeira:
+Pode ser nula (NOT NULL);
+É um campo em uma tabela que faz referência a um campo que é chave primária em outra tabela;
+É possível ter mais de uma (ou nenhuma) em uma tabela.
+
+sintaxe 
+ 
+ alter table clientes add constraint fk_tipo_cliente foreign key
+(i_tipo_cliente)references tipocliente (i_tipo_tipocliente);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #insert dml
 
