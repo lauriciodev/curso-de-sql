@@ -71,3 +71,61 @@ from cliente2
 update cliente set s_nome_cliente="lauricio" where i_cliente_cliente=1;
 
 ![cliente](ssa.png)
+
+
+#delete 
+para deletar use a sintaxe 
+
+delete from cliente where i_cliente_cliente > 0
+
+para deletar um registro especifico basta usar as condições
+
+
+
+#select 
+
+voce pode selecionar quais registros ver e para isso use a sintaxe
+
+select upper(s_nome_cliente),s_cpf_cliente from cliente 
+
+como voce pode ver acima voce pode passar mais de um registro como parametro apos o select ;
+
+
+#alias 
+
+é uma forma de dar apelidos aos registros afim de facilitar as buscas e o uso nas funções
+
+para usar o alias use a sintaxe
+
+select s_nome_cliente as nome_dos_clientes from cliente 
+
+voce tambem pode na mesma sintaxe atribuir um nome a tabela
+para isto basta adicionar logo apos o nome da tabel o nome apelido(alias)
+e lembre-se de voltar ao nome da coluna e atribuir o nome alias e ponto como no exemplo abaixo
+
+
+select tbc.s_nome_cliente as nome_dos_clientes from cliente tbc
+
+#distinct
+
+serve para remover registros duplicados de uma coluna
+para isso use a sintaxe 
+
+select distinct i_cliente_cliente from cliente 
+
+
+#subselect 
+
+trata-se da possibilidade de adicionar operações como um parametro de um insert 
+veja a sintaxe a baixo ;
+
+operação:
+
+select max(c.i_cliente_cliente)+1 as i_cliente_cliente from cliente c
+
+esta opéração acia será passada como um parametro de uma inserção veja a seguir
+
+insert into cliente values (select max(
+    c.i_cliente_cliente)+1 as i_cliente_cliente from cliente c,
+    "lauricio de souza","09871232135","2010-03-01",4);
+ )
