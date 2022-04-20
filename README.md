@@ -44,6 +44,9 @@ sintaxe
 
 ## insert
 
+para  inserir uma coluna em uma tabela use 
+# alter table cliente add column i_tipo_cliente int not null
+
 para inserir um dado em uma coluna use
 
 ## insert into "nome da tabela" values ("aqui insira os valores que serão adicionados na mesma ordem da coluna");
