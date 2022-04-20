@@ -174,4 +174,7 @@ insert into cliente values (select max(
  trata se a da possibilidade de adicionar em uma consulta a junção de uma coluna que estaja em outra tabela;
 
 
-![alt](4222.png)
+![alt](4222.png);
+
+tambem podemos fazer varios inner jois na mesma consulta 
+![alt](3q2q.png);
