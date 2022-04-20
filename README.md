@@ -170,6 +170,8 @@ insert into cliente values (select max(
 
 
  ##     INNER JOIN 
- 
-=======
->>>>>>> 808cad03cc8ee8279cf304f6b06c715e04a37f76
+
+ trata se a da possibilidade de adicionar em uma consulta a junção de uma coluna que estaja em outra tabela;
+
+
+![alt](4222.png)
