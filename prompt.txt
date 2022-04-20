@@ -1,0 +1,192 @@
+Enter password: ******************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 19
+Server version: 8.0.28 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create user usermysql@'%' identified by 'cursomysql';
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> grant all privileges on *.* to usermysql@'%' with grant option
+    -> ^C
+mysql> grant all privileges on *.* to usermysql@'%'
+    -> with grant option;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> create database comercial
+    -> create database comercial;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create database comercial' at line 2
+mysql> create database comercial;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use comercial
+Database changed
+mysql> show databeses
+    -> show databeses;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databeses
+show databeses' at line 1
+mysql> show databeses;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databeses' at line 1
+mysql> show databeses comercial;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databeses comercial' at line 1
+mysql> create table comclien(
+    ->
+    -> n_numeclien int not null auto_increment,
+    -> c_codiclien varchar(10),
+    -> c_nomeclien varchar(100),
+    -> c_razaclien varchar(100),
+    -> d_dataclien date,
+    -> c_cnpjclien varchar(20),
+    -> c_foneclien varchar(20),
+    -> primary key (n_numeclien));
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> desc comclien
+    -> desc comclien;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc comclien' at line 2
+mysql> desc comclien;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| n_numeclien | int          | NO   | PRI | NULL    | auto_increment |
+| c_codiclien | varchar(10)  | YES  |     | NULL    |                |
+| c_nomeclien | varchar(100) | YES  |     | NULL    |                |
+| c_razaclien | varchar(100) | YES  |     | NULL    |                |
+| d_dataclien | date         | YES  |     | NULL    |                |
+| c_cnpjclien | varchar(20)  | YES  |     | NULL    |                |
+| c_foneclien | varchar(20)  | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.01 sec)
+
+mysql> create table comforne(
+    ->
+    -> n_numeforne int not null auto_increment,
+    -> c_codiforne varchar(10),
+    -> c_nomeforne varchar(100),
+    -> c_razaforne varchar(100),
+    -> c_foneforne varchar(20),
+    -> primary key(n_numeforne));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc comforne
+    -> desc comforne;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc comforne' at line 2
+mysql> desc comforne;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| n_numeforne | int          | NO   | PRI | NULL    | auto_increment |
+| c_codiforne | varchar(10)  | YES  |     | NULL    |                |
+| c_nomeforne | varchar(100) | YES  |     | NULL    |                |
+| c_razaforne | varchar(100) | YES  |     | NULL    |                |
+| c_foneforne | varchar(20)  | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> create table comvende(
+    ->
+    -> n_numevende int not null auto_increment,
+    -> c_codivende varchar(10),
+    -> c_nomevende varchar(100),
+    -> c_razavende varchar(100),
+    -> c_fonevende varchar(20),
+    -> n_porcvende float(10,2),
+    -> primary key(n_numeforne));
+ERROR 1072 (42000): Key column 'n_numeforne' doesn't exist in table
+mysql> create table comvende(
+    ->
+    -> n_numevende int not null auto_increment,
+    -> c_codivende varchar(10),
+    -> c_nomevende varchar(100),
+    -> c_razavende varchar(100),
+    -> c_fonevende varchar(20),
+    -> n_porcvende float(10,2),
+    -> primary key(n_numeforne));
+ERROR 1072 (42000): Key column 'n_numeforne' doesn't exist in table
+mysql> create table comvende(
+    ->
+    -> n_numevende int not null auto_increment,
+    -> c_codivende varchar(10),
+    -> c_nomevende varchar(100),
+    -> c_razavende varchar(100),
+    -> c_fonevende varchar(20),
+    -> n_porcvende float(10,2),
+    -> primary key(n_numevende));
+Query OK, 0 rows affected, 1 warning (0.05 sec)
+
+mysql> desc comvende
+    -> desc comvende
+    -> desc comvende;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc comvende
+desc comvende' at line 2
+mysql> desc comvende;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| n_numevende | int          | NO   | PRI | NULL    | auto_increment |
+| c_codivende | varchar(10)  | YES  |     | NULL    |                |
+| c_nomevende | varchar(100) | YES  |     | NULL    |                |
+| c_razavende | varchar(100) | YES  |     | NULL    |                |
+| c_fonevende | varchar(20)  | YES  |     | NULL    |                |
+| n_porcvende | float(10,2)  | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.01 sec)
+
+mysql> create table comprodu(
+    ->
+    -> n_numeprodu int not null auto_increment,
+    -> c_codiprodu varchar(20),
+    -> c_descprodu varchar(100),
+    -> n_valoprodu float(10,2),
+    -> c_situprodu varchar(1),
+    -> n_numeforne int,
+    -> primary key(n_numeprodu));
+Query OK, 0 rows affected, 1 warning (0.05 sec)
+
+mysql> create table comvenda(
+    ->
+    -> n_numevenda int not null auto_increment,
+    -> c_codivenda varchar(10),
+    -> n_numeclien int not null,
+    -> n_numeforne int not null,
+    -> n_numevende int not null,
+    -> n_valovenda float(10,2),
+    -> n_descvenda float(10,2),
+    -> n_totavenda float(10,2),
+    -> d_datavenda date,
+    -> primary key(n_numevenda));
+Query OK, 0 rows affected, 3 warnings (0.05 sec)
+
+mysql> create table comvendas(
+    ->
+    -> n_numevenda int not null auto_increment,
+    -> c_codivenda varchar(10),
+    -> n_numeclien int not null,
+    -> n_numeforne int not null,
+    -> n_numevende int not null,
+    -> n_valovenda float(10,2),
+    -> n_descvenda float(10,2),
+    -> n_totavenda float(10,2),
+    -> d_datavenda date,
+    -> primary key(n_numevenda));
+Query OK, 0 rows affected, 3 warnings (0.06 sec)
+
+mysql> create table comivenda(
+    ->
+    -> n_numeivenda int not null auto_increment,
+    -> n_numevenda int not null,
+    -> n_numeprodu int not null,
+    -> n_valoivenda float(10,2),
+    -> n_qtdeivenda int,
+    -> n_descivenda float(10,2),
+    -> primary key(n_numeivenda));
+Query OK, 0 rows affected, 2 warnings (0.05 sec)
+
+mysql>
