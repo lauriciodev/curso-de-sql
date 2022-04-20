@@ -3,13 +3,13 @@ curso de sql com  professor bruno cfb curso
 
 
 
-#insert dml
+# insert dml
 
-##insert
+## insert
 
 para inserir um dado em uma coluna use
 
-##insert into "nome da tabela" values ("aqui insira os valores que serão adicionados na mesma ordem da coluna");
+## insert into "nome da tabela" values ("aqui insira os valores que serão adicionados na mesma ordem da coluna");
 
 
 veja os exemplos abaixo
@@ -35,7 +35,7 @@ caso seja adicionado um dado em uma coluna especifica basta especificar a coluna
 
 para isso usaremos DQL (data query language)
 
-##select
+## select
 
 select * from ("nome da tabela);
 
@@ -47,7 +47,7 @@ para especificar a coluna basta apenas substituir o * pelo numero da coluna
 
 
 
-#fazendo inserção multipla
+# fazendo inserção multipla
 
 para fazer uma inserção multipla voce precisa usar inser em conjunto com o select 
 
@@ -65,7 +65,7 @@ from cliente2
 
 
 
-#update 
+# update 
 é usado para modifcar registros de uma coluna
 
 update cliente set s_nome_cliente="lauricio" where i_cliente_cliente=1;
@@ -73,7 +73,7 @@ update cliente set s_nome_cliente="lauricio" where i_cliente_cliente=1;
 ![cliente](ssa.png)
 
 
-#delete 
+# delete 
 para deletar use a sintaxe 
 
 delete from cliente where i_cliente_cliente > 0
@@ -82,7 +82,7 @@ para deletar um registro especifico basta usar as condições
 
 
 
-#select 
+# select 
 
 voce pode selecionar quais registros ver e para isso use a sintaxe
 
@@ -91,7 +91,7 @@ select upper(s_nome_cliente),s_cpf_cliente from cliente
 como voce pode ver acima voce pode passar mais de um registro como parametro apos o select ;
 
 
-#alias 
+# alias 
 
 é uma forma de dar apelidos aos registros afim de facilitar as buscas e o uso nas funções
 
@@ -106,7 +106,7 @@ e lembre-se de voltar ao nome da coluna e atribuir o nome alias e ponto como no 
 
 select tbc.s_nome_cliente as nome_dos_clientes from cliente tbc
 
-#distinct
+# distinct
 
 serve para remover registros duplicados de uma coluna
 para isso use a sintaxe 
@@ -114,7 +114,7 @@ para isso use a sintaxe
 select distinct i_cliente_cliente from cliente 
 
 
-#subselect 
+# subselect 
 
 trata-se da possibilidade de adicionar operações como um parametro de um insert 
 veja a sintaxe a baixo ;
@@ -129,3 +129,7 @@ insert into cliente values (select max(
     c.i_cliente_cliente)+1 as i_cliente_cliente from cliente c,
     "lauricio de souza","09871232135","2010-03-01",4);
  )
+
+
+ ##     INNER JOIN 
+ 
