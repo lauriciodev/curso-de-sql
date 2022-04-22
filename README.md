@@ -192,3 +192,13 @@ e atraves da função count mostrar a quantidade
 
 atenção isso é importante;
 
+
+adicionando inner join
+
+select 
+count(i_cliente_cliente) as qtd,
+s_desc_tipocliente
+from cliente
+inner join tipocliente on i_tipo_tipocliente = i_tipo_cliente
+group by i_tipo_cliente
+
