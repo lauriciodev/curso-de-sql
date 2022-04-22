@@ -202,3 +202,14 @@ from cliente
 inner join tipocliente on i_tipo_tipocliente = i_tipo_cliente
 group by i_tipo_cliente
 
+
+reversão do join 
+
+select 
+tc.s_desc_tipocliente,
+count(c.i_cliente_cliente) as qtd
+from
+tipocliente as tc
+inner join cliente c on tc.i_tipo_tipocliente  = c.i_tipo_cliente
+group by tc.i_tipo_tipocliente
+
