@@ -178,3 +178,12 @@ insert into cliente values (select max(
 
 tambem podemos fazer varios inner jois na mesma consulta 
 ![alt](3q2q.png);
+
+# group by
+
+trata se da possibilidade de agrupar registros que se repetem 
+e atraves da função count mostrar a quantidade
+
+![alt](groupby.png);
+
+atenção isso é importante;
