@@ -213,3 +213,9 @@ tipocliente as tc
 inner join cliente c on tc.i_tipo_tipocliente  = c.i_tipo_cliente
 group by tc.i_tipo_tipocliente
 
+
+
+
+# group by 
+
+![alt](aaaaa.png)
