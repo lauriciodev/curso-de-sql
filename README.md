@@ -218,4 +218,4 @@ group by tc.i_tipo_tipocliente
 
 # group by 
 
-![alt](aaaaa.png)
+![alt](aaaaa.png);
