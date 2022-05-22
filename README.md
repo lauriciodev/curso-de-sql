@@ -219,3 +219,17 @@ group by tc.i_tipo_tipocliente
 # group by 
 
 ![alt](aaaaa.png);
+
+# modelos de entidade e relacionamento
+
+o  modelo de entidade e relacionamento e usado para a criação de bancos de forma mais rapida e eficiente e temdo uma melhor visão 
+
+ex;
+
+![alt](Screenshot_32.png)
+
+### como na foto voce pode criar varios modelos e depois exportar o escript para 
+criar outros bancos usando queryes  
+veja o exemplo abaixo;
+
+
