@@ -233,3 +233,9 @@ criar outros bancos usando queryes
 veja o exemplo abaixo;
 
 
+# passo 01
+![alt](ssaqwewe.png)]
+
+# passo 02
+
+![alt](Screenshot_33.png)
