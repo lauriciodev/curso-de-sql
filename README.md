@@ -239,3 +239,15 @@ veja o exemplo abaixo;
 # passo 02
 
 ![alt](Screenshot_33.png)
+
+# null VS is not null
+
+nullo e nao nullo 
+
+esses sao usados para especificar quando temos campos vazios  em colunas e usar em filtragens 
+
+sintaxe:
+
+
+#### select * from clientes2
+### where d_nasc_clientes is not null
