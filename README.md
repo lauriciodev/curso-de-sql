@@ -306,5 +306,13 @@ então ele funcionará da seguinte forma:
  então esta seria a consulta. Como primeira instacia de resutado ele iria passar todos os id's de clientes 
  que fossem maior que dez e logo apos esses resultados ele iria mostrar os campos de datas que estivessem vazios.
 
+ nao a limites para o uso de condições 
+ é possivel  fazer com que condições acontecam antes
+ usando parentese nas condições que deverão ser execultadas antes
+
+ veja na imagem a seguir
+
+ ![alt](Screenshot_4.png)
+
  ## NOT
 
