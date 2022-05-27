@@ -40,11 +40,11 @@ vazios eu usaria a seguinte sintaxe.
 
 "lembre-se ao direcionar uma tabela ao tipo de registro em uma consulta nao usa-se o sinal de igualdade apenas o IS NULL"
 
-##agora imagine que fosse o oposto e você precisa-se filtrar apenas os registro que estivessem preenchidos.
+## agora imagine que fosse o oposto e você precisa-se filtrar apenas os registro que estivessem preenchidos.
 
 então meu caro neste caso você iria usar o 
 
-#is not null 
+# is not null 
 
 isso iria indicar que é diferente de vazio
 
