@@ -274,3 +274,37 @@ então meu caro neste caso você iria usar o
  ### is not null 
 
 isso iria indicar que é diferente de vazio
+
+
+
+# AND, OR e NOT
+
+## AND 
+Através dessa tag podemos passar mais de uma condição em nossas consultas
+imagine que você prcise  filtrar em uma consulta os que sejam do plano basico e que também tenha a data de
+vencimento  no mes 09.
+
+é nesta situação em usamos o " AND " pois ele ira permitir que possamos passar mais de uma condição
+
+e aqui vai uma detalhe muito importante !!!
+
+### para que a pesquisa traga o resultado ambas as condições devem ser verdadeiras!
+
+## OR 
+Este é bem facil de lidar pois é muito semelhante ao a tag vista acima oque muda é apenas o fato
+de que a nossa consulta feita com "OR" trara resultados mesmo se uma das condições nao for cumprida
+
+então ele funcionará da seguinte forma: 
+ digomamos que você queira filtrar pelo id do cliente maior que 10 e tambem se o campo data esta nullo.
+
+ então voce usaria o "or" da seguinte forma.
+
+ ### select * from clientes 
+ ### where  i_id_cliente > 10 OR d_data_cliente IS NULL;
+
+
+ então esta seria a consulta. Como primeira instacia de resutado ele iria passar todos os id's de clientes 
+ que fossem maior que dez e logo apos esses resultados ele iria mostrar os campos de datas que estivessem vazios.
+
+ ## NOT
+
