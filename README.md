@@ -35,8 +35,9 @@ vazios eu usaria a seguinte sintaxe.
 
 
 
-### select * from clientes 
-### where d_nasc_clientes IS NULL ;
+## select * from clientes 
+
+## where d_nasc_clientes IS NULL ;
 
 "lembre-se ao direcionar uma tabela ao tipo de registro em uma consulta nao usa-se o sinal de igualdade apenas o IS NULL"
 
