@@ -329,3 +329,23 @@ que tenha cadastro no mes 09;
 
 
 
+# TOP vs LIMIT
+
+Usamos para limitar osresultados de nossas consultas
+essa é uma sintaxe que varia muito de acordo com a linguagem e banco de dados 
+então deixarei aqui as duas formas relacionadas ao que estou estudando, que é
+ MYsql e sql server.
+
+## MYSQL
+usamos a seguinte sintaxe:
+### select * from clientes limit 5
+
+a sintaxe acima resultará em uma consulta limitada aos 5 primeiros registros
+
+## SQL SERVER
+### select top 5, * from clientes
+
+a sintaxe acima resultará em uma consulta limitada aos 5 primeiros registros
+
+
+
