@@ -258,7 +258,7 @@ isso é muito usado para fazer requisições
 
 exemplo: Digamos que em um tabela eu tenha uma coluna com varios registros
 e entre eles alguns vazios (null). Então para filtrar em uma consulta apenas os registros
-vazios eu usaria a seguinte sintaxe.
+vazios usamos  a seguinte sintaxe.
 
 
 ### select * from clientes 
@@ -269,7 +269,7 @@ vazios eu usaria a seguinte sintaxe.
 
   agora imagine que fosse o oposto e você precisa-se filtrar apenas os registro que estivessem preenchidos.
 
-então meu caro neste caso você iria usar o 
+então meu caro neste caso você deve usar o 
 
  ### is not null 
 
@@ -297,7 +297,7 @@ de que a nossa consulta feita com "OR" trara resultados mesmo se uma das condiç
 então ele funcionará da seguinte forma: 
  digomamos que você queira filtrar pelo id do cliente maior que 10 e tambem se o campo data esta nullo.
 
- então voce usaria o "or" da seguinte forma.
+ então voce deve usar o "or" da seguinte forma.
 
  ### select * from clientes 
  ### where  i_id_cliente > 10 OR d_data_cliente IS NULL;
@@ -315,4 +315,17 @@ então ele funcionará da seguinte forma:
  ![alt](Screenshot_4.png)
 
  ## NOT
+ Trata-se da negação de um determinado registro 
+ digamos que voce precise de alguma forma filtrar uma data todos os clientes menos 
+ os que tenha cadatro no mes 09;
+
+ para fazemos essaconsulta usamos a seguinte sintaxe
+
+### select * from clientes
+### where  NOT mont(d_data_cliente) = 09;
+
+na sintaxe acima estou informando que quero todos os clientes menos aqueles 
+que tenha cadastro no mes 09;
+
+
 
