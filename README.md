@@ -22,32 +22,6 @@ sintaxe
 (i_tipo_cliente)references tipocliente (i_tipo_tipocliente);
 
 
-# null VS is not null
-
-usaremos esses dois tipos de dados quando precisar-mos informar
-que um dado é vazio ou diferente de vazio
-
-isso é muito usado para fazer requisições
-
-exemplo: Digamos que em um tabela eu tenha uma coluna com varios registros
-e entre eles alguns vazios (null). Então para filtrar em uma consulta apenas os registros
-vazios eu usaria a seguinte sintaxe.
-
-
-
-## select * from clientes 
-
-## where d_nasc_clientes IS NULL ;
-
-"lembre-se ao direcionar uma tabela ao tipo de registro em uma consulta nao usa-se o sinal de igualdade apenas o IS NULL"
-
-## agora imagine que fosse o oposto e você precisa-se filtrar apenas os registro que estivessem preenchidos.
-
-então meu caro neste caso você iria usar o 
-
-# is not null 
-
-isso iria indicar que é diferente de vazio
 
 
 
@@ -274,14 +248,29 @@ veja o exemplo abaixo;
 
 ![alt](Screenshot_33.png)
 
-# null VS is not null
 
-nullo e nao nullo 
+ # null VS is not null
 
-esses sao usados para especificar quando temos campos vazios  em colunas e usar em filtragens 
+usaremos esses dois tipos de dados quando precisar-mos informar
+que um dado é vazio ou diferente de vazio
 
-sintaxe:
+isso é muito usado para fazer requisições
+
+exemplo: Digamos que em um tabela eu tenha uma coluna com varios registros
+e entre eles alguns vazios (null). Então para filtrar em uma consulta apenas os registros
+vazios eu usaria a seguinte sintaxe.
 
 
-#### select * from clientes2
-### where d_nasc_clientes is not null
+### select * from clientes 
+
+### where d_nasc_clientes IS NULL ;
+
+"lembre-se ao direcionar uma tabela ao tipo de registro em uma consulta nao usa-se o sinal de igualdade apenas o IS NULL"
+
+  agora imagine que fosse o oposto e você precisa-se filtrar apenas os registro que estivessem preenchidos.
+
+então meu caro neste caso você iria usar o 
+
+ ### is not null 
+
+isso iria indicar que é diferente de vazio
