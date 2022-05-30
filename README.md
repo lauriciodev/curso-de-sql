@@ -395,6 +395,49 @@ select avg(sum("nome_coluna")) from clientes
 select round(avg(sum("nome_coluna")),2) from clientes
 
 
+# LIKE
+
+o operador like serve para apurarmos nossoas consultas de forma mais 
+especifica.
+
+atraves dele pode filtrar pela quantidade de caracteres e tambem pelo
+proprip caractere ;
+
+## obs:
+usamos o " % " para indicar que o caracterwe apos pode ser qualquer um
+  
+exemplos:
+
+1_   select s_nome_cliente from clientes 
+where nome_coluna like("A%")
+
+
+2_ select s_nome_cliente from clientes 
+where nome_coluna like("%A")
+
+acima no exemplo 1 estou dizendo em nossa consulta
+que quero filtrar apenas valores que comecem com a letra "A";
+
+acima no exemplo 2 estou dizendo em nossa consulta
+que quero filtrar apenas valores que terminam com a letra "A";
+
+
+## obs:
+
+usamos o " _ " para indicar a quantidade de caracters em nossa consulta
+exemplo: 
+
+select s_nome_cliente from cliente where like("_____")
+
+acima estou informando em minha consulta que quero apenas os registros que tenham 
+5 caracteres;
+
+
+
+
+
+
+
 
 
 
