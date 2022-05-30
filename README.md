@@ -349,3 +349,57 @@ a sintaxe acima resultará em uma consulta limitada aos 5 primeiros registros
 
 
 
+# max e min
+
+com esses operadores podemos obter os valores maximos e minimos de uma coluna 
+sintaxe:   
+max(nome_da_coluna)
+
+min(nome_da_coluna)
+
+
+# funções ROUND, SUM, AVG, COUNT
+
+## ROUND 
+com ele podemos arredondar numeros quebrados 
+sintaxe 
+
+round("nome_coluna",2)
+
+acima o numero apos a virgula significa a quantidade 
+de casas decimais apos o virgula no valor retornado.
+
+## SUM 
+podemos realzar somos de registros de uma mesma tabela
+sintaxe:
+
+sum("nome_coluna")
+
+
+
+## AVG (average)
+serve para obter a media de valores passados em uma consulta 
+sintaxe:
+
+avg("nome_coluna")
+
+
+### OBS:
+
+todas as funções acima podem ser passados 
+como paramaretro de outra 
+exemplo:
+
+select avg(sum("nome_coluna")) from clientes
+
+select round(avg(sum("nome_coluna")),2) from clientes
+
+
+
+
+
+
+
+
+
+
