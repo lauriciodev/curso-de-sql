@@ -378,7 +378,8 @@ sum("nome_coluna")
 
 
 ## AVG (average)
-serve para obter a media de valores passados em uma consulta 
+serve para obter a media de valores passados em uma consulta
+ 
 sintaxe:
 
 avg("nome_coluna")
@@ -389,6 +390,7 @@ avg("nome_coluna")
 todas as funções acima podem ser passados 
 como paramaretro de outra 
 exemplo:
+
 
 select avg(sum("nome_coluna")) from clientes
 
