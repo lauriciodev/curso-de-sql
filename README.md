@@ -367,10 +367,12 @@ sintaxe
 round("nome_coluna",2)
 
 acima o numero apos a virgula significa a quantidade 
+
 de casas decimais apos o virgula no valor retornado.
 
 ## SUM 
 podemos realzar somos de registros de uma mesma tabela
+
 sintaxe:
 
 sum("nome_coluna")
@@ -379,7 +381,7 @@ sum("nome_coluna")
 
 ## AVG (average)
 serve para obter a media de valores passados em uma consulta
- 
+
 sintaxe:
 
 avg("nome_coluna")
