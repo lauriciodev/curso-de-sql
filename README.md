@@ -79,6 +79,17 @@ insert into cliente values (02,"jurinalva","11111111113","2000-11-20",03);
 caso seja adicionado um dado em uma coluna especifica basta especificar a coluna antes do parametro "values"
 
 
+
+# Alterando nome da coluna 
+
+ALTER TABLE nomes_clientes 
+RENAME COLUMN primeiro_nome TO nome, 
+RENAME COLUMN segundo_nome TO sobrenome;
+
+
+
+
+
 #como ver essee dados que foram inseridos ?
 
 para isso usaremos DQL (data query language)
