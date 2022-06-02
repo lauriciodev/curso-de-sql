@@ -449,7 +449,21 @@ acima estou informando em minha consulta que quero apenas os registros que tenha
 
 
 
+# usando o operador IN
 
+esse operador serve para sermos mais especificos em nossas consultas
+dispensando o uso do and ;
+
+## exemplo digamos que eu tenha que fazer uma consulta que retorne apenas os 3 ultimos caracteres de um cpf 
+
+ veja abaixo o uso do IN para esta consulta;
+
+ select * from clientes 
+ where right(s_cpf_clientes,3) in (111,222,333)
+
+ a consulta acima deve me retornar apenas  os cpfs de clientes que tenham como ultimos tres numeros 1,2 ou 3 .
+
+ ### OBS: podemos tambem passar subselects como parametro de um IN  
 
 
 
