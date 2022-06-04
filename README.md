@@ -465,7 +465,16 @@ dispensando o uso do and ;
 
  ### OBS: podemos tambem passar subselects como parametro de um IN  
 
+#between 
 
+com ele podemos fazer consultas que irão retornar valores que estejam entre determinadascondições ;
+ex:
+## digamos que eu tenha que filtar em uma consulta valores que estejam entre 1 e 5 entao para esta consulta iria usar a seguinte sintaxe;
+
+select * from clients 
+where i_id_clientes between 1 and 5;
+
+isso iria retornar clietes de id 1 A 5;
 
 
 
