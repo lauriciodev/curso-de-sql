@@ -465,7 +465,7 @@ dispensando o uso do and ;
 
  ### OBS: podemos tambem passar subselects como parametro de um IN  
 
-#between 
+# between 
 
 com ele podemos fazer consultas que irão retornar valores que estejam entre determinadascondições ;
 ex:
