@@ -529,5 +529,22 @@ order by i_tipo_clientes;
 lembre-se de usar o "alias"  para diferenciar a tabela usada na consulta.
 
 
+# union
 
+permite juntar mais de um select e gerar um resultado
+
+no exemplo abaixo veja a junção de duas colunas
+que tem registros em comun 
+
+## exemplo 
+
+select "col 01",i_id_clientesm, s_nome_clientes 
+from clietes
+UNION
+select "col 2", i_id clientes, s_nome_clientes from clientes 
+
+
+## obs:
+
+é possivel fazer  mais  de 2 union na mesma consulta.
 
