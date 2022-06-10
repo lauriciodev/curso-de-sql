@@ -481,6 +481,52 @@ isso iria retornar clietes de id 1 A 5;
 
 
 
+# Between
+Trata-se de uma forma de simplificar o uso do in 
+ao inves de epecificar todos os numeros que queremos como retorno
+passamos apenas o primeiro e o ultimo sinalizando que os resultados estarãoentre os numeros
+passados.
+
+exemplo:
+
+select * from clientes
+where i_id_cliente between 1 and 10
+
+### dessa forma estou especificando que o retorno estará entre 1 e 10;
+
+# tipos de join
+
+## inner join 
+irá pegar apenas registro em comumn entre duas tabelas
+
+## left join 
+irá dar prioridade apenas a tabela principal
+
+### obs :
+na consulta com left join será retornado valores que nao tem nehum vinculo com
+com valores relacionado.
+
+
+## rigth join 
+
+irá dar prioridade a tabela secundaria
+
+##  Full outer join irá retornar todos os valores de ambas as tabelas 
+
+### obs : 
+para que possa ser usado antes deve existir um join entre as tabelas
+
+## Self join
+
+trata-se de filtrar registros em consultas tendo como base ela mesma;
+
+exemplo;
+
+select * from clientes c1 ,clientes c2 
+where  c1.i_tipo_clients = c2.i_tipo_clientes 
+order by i_tipo_clientes;
+
+lembre-se de usar o "alias"  para diferenciar a tabela usada na consulta.
 
 
 
