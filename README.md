@@ -570,4 +570,4 @@ exists (select * from vendas where i_cliente_vendas = i_id_clientes);
 
 as colunas envolvidas na consulta que foi passado como condiçao devem ter um relacionamento
 de chave estrangeira.
-![alt](./exists.png);
+![alt](./existys.png);
