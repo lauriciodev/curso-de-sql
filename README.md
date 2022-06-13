@@ -537,6 +537,8 @@ permite juntar mais de um select e gerar um resultado
 no exemplo abaixo veja a junção de duas colunas
 que tem registros em comun 
 
+![alt](./uniom.png)
+
 ## exemplo 
 
 select "col 01",i_id_clientesm, s_nome_clientes 
