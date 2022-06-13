@@ -549,3 +549,20 @@ select "col 2", i_id clientes, s_nome_clientes from clientes
 
 é possivel fazer  mais  de 2 union na mesma consulta.
 
+
+
+# exists
+
+com ele podemos aprimorar mais nossos filtros em uma consulta 
+basicamente estamos usamos uma consulta como condiçao se esta condição retornar true 
+então sera exibidos os resultados correspondentes
+veja abaixo como usar o operador exists.
+
+select * from clientes where
+exists (select * from vendas where i_cliente_vendas = i_id_clientes);
+
+## obs:
+
+as colunas envolvidas na consulta que foi passado como condiçao devem ter um relacionamento
+de chave estrangeira.
+![alt](./exists.png);
