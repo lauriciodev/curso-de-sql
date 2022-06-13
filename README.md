@@ -138,6 +138,7 @@ para deletar use a sintaxe
 
 delete from cliente where i_cliente_cliente > 0
 
+
 para deletar um registro especifico basta usar as condições
 
 
