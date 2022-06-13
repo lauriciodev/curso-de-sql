@@ -550,6 +550,9 @@ select "col 2", i_id clientes, s_nome_clientes from clientes
 ## obs:
 
 é possivel fazer  mais  de 2 union na mesma consulta.
+e a quantidade de colunas e a ordem delas devem ser as mesmas
+e dessa forma será possivel juntar diferentes colunas em apenas uma consulta;
+ 
 
 
 
