@@ -571,3 +571,26 @@ exists (select * from vendas where i_cliente_vendas = i_id_clientes);
 as colunas envolvidas na consulta que foi passado como condiçao devem ter um relacionamento
 de chave estrangeira.
 ![alt](./existys.png);
+
+
+
+# case when
+com ele podemos passar condições e ações em nossas consultas
+e obter colunas dinamicas com os registros retornados
+
+exemplo:
+se o valor da coluna data for nulo enâo atribua a data atual;
+
+sintaxe da consulta acima;
+
+select 
+case
+
+when d_data_cliente is null them now()
+else d_data_clientes
+
+end
+
+veja o exemplo abaixo;
+
+![alt](./case-when.png)
