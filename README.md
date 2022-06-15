@@ -594,3 +594,25 @@ end
 veja o exemplo abaixo;
 
 ![alt](./case-when.png)
+
+
+#ifnull
+serve para adicionar valores em registros que tenham valores nullos 
+e em detetminadas situações precisamos que esses valor nullo seja substituido;
+
+## situação: 
+
+digamos que eu precise calcular os valores de produtos e quantidade
+de vendas feitas.
+nesse caso precisamos que mesmo que esse produto nao tivesse nenuma venda
+tenha como valor o "0" assim sera possivel realizar operações.
+
+sintaxe;
+
+select * , round(valor_produto * ifnull(quantidade,0),2) as "total" from vendas;
+
+
+resumo sintaxe>: 
+ifnull(coluna, "numero que devera substituir o nullo");
+
+![alt](./isnull.png)
