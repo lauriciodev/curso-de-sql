@@ -663,6 +663,16 @@ para chamar uma procedure use a sintaxe abaixo;
 call teste();
 
 
+
+
+
+## usando procedures com parametros
+
+uma procedure pode resceber parametros que serão utilizados 
+para retornar valores em nossoas consultas.
+
 exemplo :
 
 ![alt](./procedures.png);
+
+obs: caso nao seja passado a quantdade correta de parametros a cunsulta ira retornar um erro;
