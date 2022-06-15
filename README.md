@@ -2,7 +2,9 @@
 curso de sql com  professor bruno cfb curso
 
 
-## chave estrangeira
+######################################################################################################
+
+# chave estrangeira
 
 alter table clientes add constraint fk_tipo_cliente foreign key
 
@@ -34,27 +36,12 @@ dd
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # insert dml
 
 ## insert
 
 para  inserir uma coluna em uma tabela use 
-# alter table cliente add column i_tipo_cliente int not null
+### alter table cliente add column i_tipo_cliente int not null
 
 para inserir um dado em uma coluna use
 
@@ -79,7 +66,7 @@ insert into cliente values (02,"jurinalva","11111111113","2000-11-20",03);
 
 caso seja adicionado um dado em uma coluna especifica basta especificar a coluna antes do parametro "values"
 
-
+######################################################################################################
 
 # Alterando nome da coluna 
 
@@ -106,6 +93,7 @@ para especificar a coluna basta apenas substituir o * pelo numero da coluna
 ![alt](dtl.png)
 
 
+######################################################################################################
 
 # fazendo inserção multipla
 
@@ -124,6 +112,7 @@ from cliente2
 ![alt](ss.png)
 
 
+######################################################################################################
 
 # update 
 é usado para modifcar registros de uma coluna
@@ -133,6 +122,11 @@ update cliente set s_nome_cliente="lauricio" where i_cliente_cliente=1;
 ![cliente](ssa.png)
 
 
+
+
+
+######################################################################################################
+
 # delete 
 para deletar use a sintaxe 
 
@@ -141,7 +135,7 @@ delete from cliente where i_cliente_cliente > 0
 
 para deletar um registro especifico basta usar as condições
 
-
+######################################################################################################
 
 # select 
 
@@ -151,6 +145,7 @@ select upper(s_nome_cliente),s_cpf_cliente from cliente
 
 como voce pode ver acima voce pode passar mais de um registro como parametro apos o select ;
 
+######################################################################################################
 
 # alias 
 
@@ -167,6 +162,9 @@ e lembre-se de voltar ao nome da coluna e atribuir o nome alias e ponto como no 
 
 select tbc.s_nome_cliente as nome_dos_clientes from cliente tbc
 
+
+######################################################################################################
+
 # distinct
 
 serve para remover registros duplicados de uma coluna
@@ -174,6 +172,7 @@ para isso use a sintaxe
 
 select distinct i_cliente_cliente from cliente 
 
+######################################################################################################
 
 # subselect 
 
@@ -203,6 +202,8 @@ insert into cliente values (select max(
 tambem podemos fazer varios inner jois na mesma consulta 
 ![alt](3q2q.png);
 
+
+######################################################################################################
 
 # group by
 
@@ -235,11 +236,13 @@ inner join cliente c on tc.i_tipo_tipocliente  = c.i_tipo_cliente
 group by tc.i_tipo_tipocliente
 
 
-
+######################################################################################################
 
 # group by 
 
 ![alt](aaaaa.png);
+
+######################################################################################################
 
 # modelos de entidade e relacionamento
 
@@ -261,6 +264,8 @@ veja o exemplo abaixo;
 
 ![alt](Screenshot_33.png)
 
+
+#####################################################################################################
 
  # null VS is not null
 
@@ -288,7 +293,7 @@ então meu caro neste caso você deve usar o
 
 isso iria indicar que é diferente de vazio
 
-
+######################################################################################################
 
 # AND, OR e NOT
 
@@ -340,7 +345,7 @@ então ele funcionará da seguinte forma:
 na sintaxe acima estou informando que quero todos os clientes menos aqueles 
 que tenha cadastro no mes 09;
 
-
+######################################################################################################
 
 # TOP vs LIMIT
 
@@ -360,7 +365,7 @@ a sintaxe acima resultará em uma consulta limitada aos 5 primeiros registros
 
 a sintaxe acima resultará em uma consulta limitada aos 5 primeiros registros
 
-
+######################################################################################################
 
 # max e min
 
@@ -370,6 +375,7 @@ max(nome_da_coluna)
 
 min(nome_da_coluna)
 
+######################################################################################################
 
 # funções ROUND, SUM, AVG, COUNT
 
@@ -411,6 +417,7 @@ select avg(sum("nome_coluna")) from clientes
 
 select round(avg(sum("nome_coluna")),2) from clientes
 
+######################################################################################################
 
 # LIKE
 
@@ -449,7 +456,7 @@ select s_nome_cliente from cliente where like("_____")
 acima estou informando em minha consulta que quero apenas os registros que tenham 
 5 caracteres;
 
-
+######################################################################################################
 
 # usando o operador IN
 
@@ -466,6 +473,10 @@ dispensando o uso do and ;
  a consulta acima deve me retornar apenas  os cpfs de clientes que tenham como ultimos tres numeros 1,2 ou 3 .
 
  ### OBS: podemos tambem passar subselects como parametro de um IN  
+
+
+######################################################################################################
+
 
 # between 
 
@@ -494,6 +505,11 @@ select * from clientes
 where i_id_cliente between 1 and 10
 
 ### dessa forma estou especificando que o retorno estará entre 1 e 10;
+
+
+
+######################################################################################################
+
 
 # tipos de join
 
@@ -530,6 +546,8 @@ order by i_tipo_clientes;
 lembre-se de usar o "alias"  para diferenciar a tabela usada na consulta.
 
 
+######################################################################################################
+
 # union
 
 permite juntar mais de um select e gerar um resultado
@@ -554,7 +572,7 @@ e a quantidade de colunas e a ordem delas devem ser as mesmas
 e dessa forma será possivel juntar diferentes colunas em apenas uma consulta;
  
 
-
+######################################################################################################
 
 # exists
 
@@ -572,7 +590,7 @@ as colunas envolvidas na consulta que foi passado como condiçao devem ter um re
 de chave estrangeira.
 ![alt](./existys.png);
 
-
+######################################################################################################
 
 # case when
 com ele podemos passar condições e ações em nossas consultas
@@ -600,6 +618,8 @@ veja o exemplo abaixo;
 serve para adicionar valores em registros que tenham valores nullos 
 e em detetminadas situações precisamos que esses valor nullo seja substituido;
 
+######################################################################################################
+
 ## situação: 
 
 digamos que eu precise calcular os valores de produtos e quantidade
@@ -617,6 +637,7 @@ ifnull(coluna, "numero que devera substituir o nullo");
 
 ![alt](./isnull.png)
 
+######################################################################################################
 
 # procedures 
 são consultas avancadas que podemos armazenar e usar quando nescessario
