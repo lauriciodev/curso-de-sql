@@ -616,3 +616,32 @@ resumo sintaxe>:
 ifnull(coluna, "numero que devera substituir o nullo");
 
 ![alt](./isnull.png)
+
+
+# procedures 
+são consultas avancadas que podemos armazenar e usar quando nescessario
+
+para criar uma procedure use a seguinte sintaxe;
+
+delimiter ##
+ create procedure teste()
+
+ begin
+
+ declare n varchar(24);
+ set n = "texto de exemplo";
+ select  n.
+
+end ##
+
+delimiter ;
+
+
+para chamar uma procedure use a sintaxe abaixo;
+
+call teste();
+
+
+exemplo :
+
+![alt](./procedures.png);
