@@ -40,6 +40,7 @@ dd
 
 ## insert
 
+
 para  inserir uma coluna em uma tabela use 
 ### alter table cliente add column i_tipo_cliente int not null
 
