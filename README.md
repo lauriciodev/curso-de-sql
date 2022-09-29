@@ -142,6 +142,7 @@ para deletar um registro especifico basta usar as condições
 
 voce pode selecionar quais registros ver e para isso use a sintaxe
 
+
 select upper(s_nome_cliente),s_cpf_cliente from cliente 
 
 como voce pode ver acima voce pode passar mais de um registro como parametro apos o select ;
