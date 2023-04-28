@@ -24,7 +24,6 @@ sintaxe
  alter table clientes add constraint fk_tipo_cliente foreign key
 (i_tipo_cliente)references tipocliente (i_tipo_tipocliente);
 
-dd
 
 
 
