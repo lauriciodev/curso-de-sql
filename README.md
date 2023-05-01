@@ -3,7 +3,7 @@ curso de sql com  professor bruno cfb curso
 
 
 ######################################################################################################
-
+o332944166806297342238516
 # chave estrangeira
 
 alter table clientes add constraint fk_tipo_cliente foreign key
